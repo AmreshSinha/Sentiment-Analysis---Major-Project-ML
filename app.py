@@ -2,7 +2,7 @@ import streamlit as st
 import sklearn
 import joblib
 model = joblib.load('Coursera Review Sentiment')
-st.title('Coursera Review Sentiment')
+st.title('Coursera Sentiment')
 ip = st.text_input('Enter your review')
 op = model.predict([ip])
 if st.button('Predict'):
